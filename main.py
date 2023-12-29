@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 
 print(
-    f"""{fore.CADET_BLUE_1 + style.BOLD}
+    f"""
     Multi Transfer
 Script by Lucas Day
 Github : https://github.com/LucasAlgerDay"""
