@@ -1,4 +1,4 @@
-import aminofix
+import aminoli
 from pyfiglet import figlet_format
 from colored import fore, style
 from tqdm import tqdm
@@ -18,7 +18,7 @@ print(figlet_format("Multi Transfer", font="fourtops"))
 email = input("email: ")
 password = input("password: ")
 
-client = aminofix.Client()
+client = aminoli.Client()
 client.login(email, password)
 disponibles = client.get_wallet_info().totalCoins
 print(f"Coins disponibles: {disponibles}")
