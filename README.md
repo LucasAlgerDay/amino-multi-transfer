@@ -1,2 +1,2 @@
 # amino-multi-transfer
-transfer with aminofix, for blogs, wikis, chats and vip
+transfer with aminoli, for blogs, wikis, chats and vip
