@@ -38,7 +38,7 @@ def vip():
         client.join_community(comId = communityid)
     except:
         print("Asegurate de que la comunidad sea publica, si la cuenta ya se encuentra dentro de la comunidad ignora este mensaje xd")
-    sub_client = aminofix.SubClient(comId=communityid, profile=client.profile)
+    sub_client = aminoli.SubClient(comId=communityid, profile=client.profile)
     for i in tqdm(range(total // 500)):
         try:
             sub_client.subscribe(userId= objeto, autoRenew= False)
@@ -59,7 +59,7 @@ def blogs():
         client.join_community(comId = communityid)
     except:
         print("Asegurate de que la comunidad sea publica, si la cuenta ya se encuentra dentro de la comunidad ignora este mensaje xd")
-    sub_client = aminofix.SubClient(comId=communityid, profile=client.profile)
+    sub_client = aminoli.SubClient(comId=communityid, profile=client.profile)
     for i in tqdm(range(total // 500)):
         try:
             sub_client.send_coins(coins= 500, blogId= objeto)
@@ -80,7 +80,7 @@ def wikis():
         client.join_community(comId = communityid)
     except:
         print("Asegurate de que la comunidad sea publica, si la cuenta ya se encuentra dentro de la comunidad ignora este mensaje xd")
-    sub_client = aminofix.SubClient(comId=communityid, profile=client.profile)
+    sub_client = aminoli.SubClient(comId=communityid, profile=client.profile)
     for i in tqdm(range(total // 500)):
         try:
             sub_client.send_coins(coins= 500, objectId= objeto)
@@ -103,7 +103,7 @@ def chats():
         client.join_community(comId = communityid)
     except:
         print("Asegurate de que la comunidad sea publica, si la cuenta ya se encuentra dentro de la comunidad ignora este mensaje xd")
-    sub_client = aminofix.SubClient(comId=communityid, profile=client.profile)
+    sub_client = aminoli.SubClient(comId=communityid, profile=client.profile)
     for i in tqdm(range(total // 500)):
         try:
             sub_client.send_coins(coins= 500, chatId= objeto)
